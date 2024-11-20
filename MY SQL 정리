@@ -1,0 +1,33 @@
+<h2>my sql</h2>
+
+1. show databases;  => 현재 작업된 db확인
+
+2. create database DB명;   => DB생성 // ex) create database test; 하면 test 라는 데이터베이스를 만든 거임
+
+3.use DB명;    => db open
+
+4.create table 테이블명(
+
+  필드1 자료형,
+
+  필드2 자료형);
+
+5. 테이블 구조확인:  desc 테이블명
+
+6. 테이블 확인 : show table명
+
+7. insert into 테이블명 (필드1, 필드2 ... )values(값1,값2..) 레코드 삽입 // ex) insert into stu (id, pwd) values('kim', 'k123');
+                                                                            -> id kim pwd k123 들어감
+
+8. 목록확인   select 필드명 from 테이블명 // ex) 필드명에 * 을 하면 다 나옴
+
+9. 레크드 수정 update 테이블명 set 변경필드명=변경값 where 조건; // ex) update stu set pwd = 'kkk' where id = 'kim';   kim 아이디 비번을 kkk로 바꾸겠다는 뜻
+
+10.행 삭제  delete from 테이블명 where 조건
+
+11.테이블 삭제  drop table 테이블명; 
+
+12. DB삭제 drop database DB명
+
+
+
